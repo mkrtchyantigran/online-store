@@ -1,0 +1,28 @@
+@import '../../styles/buttons.scss';
+@import '../../styles/fonts.scss';
+@import '../../styles/variables.scss';
+
+
+.shopByCategories {
+    padding: 80px 0;
+    .container {
+
+        max-width: 1296px; 
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        .title-and-button {
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+
+            .title {
+                font-size: 40px;
+                font-weight: 600;
+            }
+        }
+    }
+}
