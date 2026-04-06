@@ -4,8 +4,7 @@ import chair from '../../assets/images/chair.jpg';
 
 export default function MainBanner() {
     return (
-        <main>
-            <div className="main-section">
+        <section className="main-section">
                 <div className='container'>
 
                     <div className='text-content'>
@@ -45,7 +44,6 @@ export default function MainBanner() {
                     </div>
 
                 </div>
-            </div>
-        </main>
+        </section>
     )
 }
