@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import "./newProducts.scss";
 
 import modernArmchair from "../../assets/images/new-products/modern-armchair.jpg"
@@ -52,7 +53,7 @@ export default function NewProducts() {
 
                 <ul className="products-grid">
                     <li className="product-card">
-                        <a href="#">
+                        <Link to="/">
                             <div className="image-wrapper">
                                 <img src={modernArmchair} alt="Modern Armchair" />
                                 <button className="like-btn">♡</button>
@@ -68,10 +69,10 @@ export default function NewProducts() {
                                 </div>
                                 <span className="price">$250</span>
                             </div>
-                        </a>
+                        </Link>
                     </li>
                     <li className="product-card">
-                        <a href="#">
+                        <Link to="/">
                             <div className="image-wrapper">
                                 <img src={EggChair} alt="Egg Chair" />
                                 <button className="like-btn">♡</button>
@@ -87,10 +88,10 @@ export default function NewProducts() {
                                 </div>
                                 <span className="price">$250</span>
                             </div>
-                        </a>
+                        </Link>
                     </li>
                     <li className="product-card">
-                        <a href="#">
+                        <Link to="/">
                             <div className="image-wrapper">
                                 <img src={chaiseLounge} alt="Chaise Lounge" />
                                 <button className="like-btn">♡</button>
@@ -106,7 +107,7 @@ export default function NewProducts() {
                                 </div>
                                 <span className="price">$250</span>
                             </div>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>

@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import './shopByCategories.scss';
 import table from "../../assets/images/shop-categories-images/category-table.jpg"
 import chair from "../../assets/images/shop-categories-images/category-chair.jpg"
@@ -18,7 +19,7 @@ export default function ShopByCategories() {
 
                 <ul className="categories-list"> 
                         <li className="category-card">
-                            <a href="#">
+                            <Link to="/">
                                 <div className='image-wrapper'>
                                     <img src={chair} alt="chair" />
                                 </div>
@@ -26,10 +27,10 @@ export default function ShopByCategories() {
                                     <h3>Tables</h3>
                                     <span>24 products</span>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                          <li className="category-card">
-                            <a href="#">
+                            <Link to="/">
                                 <div className='image-wrapper'>
                                     <img src={table} alt="table" />
                                 </div>
@@ -37,10 +38,10 @@ export default function ShopByCategories() {
                                     <h3>Tables</h3>
                                     <span>24 products</span>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                          <li className="category-card">
-                            <a href="#">
+                            <Link to="/">
                                 <div className='image-wrapper'>
                                     <img src={armchair} alt="armchair" />
                                 </div>
@@ -48,10 +49,10 @@ export default function ShopByCategories() {
                                     <h3>Armchairs</h3>
                                     <span>24 products</span>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                         <li className="category-card">
-                            <a href="#">
+                            <Link to="/">
                                 <div className='image-wrapper'>
                                     <img src={sofa} alt="sofa" />
                                 </div>
@@ -59,7 +60,7 @@ export default function ShopByCategories() {
                                     <h3>Sofas</h3>
                                     <span>24 products</span>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                     </ul>
             </div>

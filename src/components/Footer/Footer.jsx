@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import './footer.scss';
 
 import facebookIcon from "../../assets/icons/footer-icons/Facebook_black.svg"
@@ -33,54 +34,54 @@ export default function Footer() {
                         <p>Phone: (928) 630-9272</p>
                         <ul className="socials">
                             <li>
-                                <a href="#">
+                                <Link to="/">
                                     <img src={facebookIcon} alt="Facebook" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#">
+                                <Link to="/">
                                     <img src={frameIcon} alt="Twitter" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#">
+                                <Link to="/">
                                     <img src={instagramIcon} alt="Instagram" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#">
+                                <Link to="/">
                                     <img src={youtubeIcon} alt="YouTube" />
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
                     <div className='shop-column footer-column'>
                         <h4>Shop</h4>
                         <ul>
-                            <li><a href="#">Chairs</a></li>
-                            <li><a href="#">Beds</a></li>
-                            <li><a href="#">Sofas</a></li>
-                            <li><a href="#">Cabinets</a></li>
-                            <li><a href="#">Armchairs</a></li>
-                            <li><a href="#">Sale</a></li>
+                            <li><Link to="/">Chairs</Link></li>
+                            <li><Link to="/">Beds</Link></li>
+                            <li><Link to="/">Sofas</Link></li>
+                            <li><Link to="/">Cabinets</Link></li>
+                            <li><Link to="/">Armchairs</Link></li>
+                            <li><Link to="/">Sale</Link></li>
                         </ul>
                     </div>
                     <div className='customer-service-column footer-column'>
                         <h4>Customer service</h4>
                         <ul>
-                            <li><a href="#">Orders</a></li>
-                            <li><a href="#">Addresses</a></li>
-                            <li><a href="#">Returns</a></li>
-                            <li><a href="#">Account details</a></li>
-                            <li><a href="#">F.A.Q</a></li>
+                            <li><Link to="/">Orders</Link></li>
+                            <li><Link to="/">Addresses</Link></li>
+                            <li><Link to="/">Returns</Link></li>
+                            <li><Link to="/">Account details</Link></li>
+                            <li><Link to="/">F.A.Q</Link></li>
                         </ul>
                     </div>
                     <div className='delivery-column footer-column'>
                         <h4>Delivery</h4>
                         <ul>
-                            <li><a href="#">Orders</a></li>
-                            <li><a href="#">Return</a></li>
-                            <li><a href="#">Free Delivery</a></li>
+                            <li><Link to="/">Orders</Link></li>
+                            <li><Link to="/">Return</Link></li>
+                            <li><Link to="/">Free Delivery</Link></li>
                         </ul>
                     </div>
                 </div>

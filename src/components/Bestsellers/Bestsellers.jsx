@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import "./bestsellers.scss";
 
 import modernChair from "../../assets/images/shop-categories-images/category-chair.jpg";
@@ -26,13 +27,13 @@ export default function Bestsellers() {
             <div className="container">
                 <div className="title-and-button">
                     <h2>Bestsellers</h2>
-                    <a href="#">View all</a>
+                    <Link to="/">View all</Link>
                 </div>
 
                 <ul className="products-grid">
                     {products.map((product) => (
                         <li key={product.id} className="product-card">
-                            <a href="#">
+                            <Link to="/">
                                 <div className="image-wrapper">
                                     {product.badge && (
                                         <span className={`badge badge ${product.badge.toLowerCase()}`}>
@@ -57,7 +58,7 @@ export default function Bestsellers() {
                                         <span className="dot"></span>
                                     </div>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                     ))}
                 </ul>
