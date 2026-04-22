@@ -6,6 +6,9 @@ import loginIcon from "../../assets/icons/login-icon.svg";
 import heartIcon from "../../assets/icons/heart-icon.svg";
 import shopIcon from "../../assets/icons/shop-icon.svg";
 
+import { Link, NavLink } from "react-router-dom";
+
+
 export default function Header() {
     return (
         <header className="header">
@@ -51,33 +54,49 @@ export default function Header() {
 
                 <nav>
 
-                    <a href="/home">
+                    <Link to="/">
                         <img className="nav-logo" src={navIcon} alt="navigation icon" />
-                    </a>
+                    </Link>
 
                     <ul className="nav-links">
-                        <li><a href="/">Home</a></li>
-                         <li><a href="/">Shop</a></li>
-                        <li><a href="/">About Us</a></li>
-                         <li><a href="/">Contact Us</a></li>
+                        <li>
+                            <NavLink to="/">
+                                Home
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/shop">
+                                Shop
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/about-us">
+                                About Us
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/contact-us">
+                                Contact Us
+                            </NavLink>
+                        </li>
                     </ul>
 
                     <div className="right_side">
                         <ul>
                             <li>
-                                <a href="">
+                                <Link to="/login">
                                     <img src={loginIcon} alt="login icon" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="">
+                                <Link to="/wishlist">
                                     <img src={heartIcon} alt="heart icon" />
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="">
+                                <Link to="/cart">
                                     <img src={shopIcon} alt="shop icon" />
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
